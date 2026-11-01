@@ -28,7 +28,7 @@ It sends:
 
 - `startDateTime`: midnight today, converted to UTC.
 - `endDateTime`: midnight seven days later, converted to UTC.
-- `$select=id,subject,start,end,isCancelled`
+- `$select=id,subject,sensitivity,start,end,isCancelled`
 - `$orderby=start/dateTime`
 - `$top=100`
 - Header `Prefer: outlook.timezone="UTC"`
@@ -231,3 +231,17 @@ Here, the backend has resolved the friendly room name and renamed the timestamp 
 All four Microsoft-specific cache entries are implemented in [ApiClient](src/Feed/SourceType/MsGraph/ApiClient.php).
 
 Their keys include a credentials fingerprint, so changing credentials causes subsequent lookups to use different cache entries.
+
+## Aarhus gør det anderledes
+
+### To Datakilder (eksempel fra Aarhus Kommune)
+
+- Ressourcer og lokationer (fx SharePoint)
+- Events fra Exchange via Microsoft Graph
+
+Eksempel på ressource og lokation (opdigtede data)
+
+| Type | Eksempel | Data |
+|---|---|---|
+| Ressource | Mødelokale 1 | `moedelokale1@kommune.dk`, visningsnavn “Mødelokale 1” |
+| Lokation | Rådhuset | Adresse, by, postnummer og eventuelt koordinater |
