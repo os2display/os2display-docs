@@ -30,6 +30,17 @@ bin/console app:screen-layouts:remove <SCREEN_LAYOUT_ULID>
 
 `app:update` installs and updates all layouts.
 
+## Touch regions in layouts
+
+This works the same in 3.x and 2.x. A region can be rendered as buttons. In this scenario each slide that is present in a region is added as a button that
+can be opened in full screen. It will close when the slide has run or if the user presses the close button.
+
+To make a layout region into a touch button region, add the following to the region in the layout `.json` file:
+
+```
+"type": "touch-buttons"
+```
+
 ## 2.x (legacy)
 
 Layouts are stored in [screen-layouts](https://github.com/os2display/display-templates/tree/develop/build/screen-layouts)
@@ -46,15 +57,4 @@ To remove the same layout:
 
 ```sh
 bin/console app:screen-layouts:remove [path_to_layout].json
-```
-
-## Touch regions in layouts
-
-This works the same in 3.x and 2.x. A region can be rendered as buttons. In this scenario each slide that is present in a region is added as a button that
-can be opened in full screen. It will close when the slide has run or if the user presses the close button.
-
-To make a layout region into a touch button region, add the following to the region in the layout `.json` file:
-
-```
-"type": "touch-buttons"
 ```

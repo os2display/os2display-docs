@@ -39,7 +39,7 @@ A template is a `.jsx` module and a `.json` configuration file with the same nam
 - `config()`: the template's `id`, `title` (shown in the admin), `options` and `adminForm`.
 - `renderSlide(slide, run, slideDone)`: returns the JSX for the slide.
   - **slide**: the slide data from the API.
-  - **run**: a date string that is set when the slide should start executing.
+  - **run**: a number that changes each time the slide should (re)start; `!run` means not started yet.
   - **slideDone**: a function the slide calls when it is done.
 
 The slide is responsible for signalling that it is done by calling `slideDone()`. For a slide that runs for a fixed

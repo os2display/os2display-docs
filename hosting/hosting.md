@@ -23,6 +23,9 @@ the screen client at `/client`. There are no separate admin or client applicatio
 - MariaDB (10.11 or 11.4).
 - A cache backend: Redis by default, or memcached, the database, the filesystem or APCu (`CACHE_ADAPTER`).
 - nginx (or another webserver) in front of PHP-FPM.
+- Without the images: an ImageMagick security policy that only allows the image formats used, such as the bundled
+  [`imagemagick-policy.xml`](https://github.com/os2display/os2display/blob/main/infrastructure/os2display/imagemagick-policy.xml).
+  Without it, crafted uploads can abuse ImageMagick's SVG, MVG and URL readers.
 
 The published container images include everything except the database and cache. See
 [Hosting requirements](https://github.com/os2display/os2display#hosting-requirements) for the details.
@@ -37,7 +40,7 @@ The published container images include everything except the database and cache.
   - `ghcr.io/os2display/os2display-nginx`: nginx serving static files and forwarding PHP requests.
 
   Images are tagged with the release version (e.g. `3.0.0`); `latest` is the newest 3.x release and `develop`
-  the development branch.
+  the development branch. Prerelease tags (e.g. `3.0.0-RC1`) don't move `latest`.
 - **Release tarball**: every [release](https://github.com/os2display/os2display/releases) has a pre-built
   `os2display-<version>.tar.gz` with PHP dependencies and the built frontend, for a classic PHP + nginx setup.
 - **Checked-out repository**: build and run the code yourself.

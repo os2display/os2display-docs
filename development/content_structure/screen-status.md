@@ -16,9 +16,7 @@ The other part is in the admin where the data can be exposed to the user.
 
 ## Setup
 
-### 3.x
-
-Set these environment variables:
+Set these environment variables (for 2.x see [2.x (legacy)](#2x-legacy)):
 
 ```dotenv
 # Enable tracking screen information.
@@ -31,41 +29,6 @@ ADMIN_SHOW_SCREEN_STATUS=true
 
 From 3.0 the admin no longer uses `public/config.json`, and the 2.x infrastructure's `APP_` prefixed variables are
 gone: set the variables above directly.
-
-### 2.x (legacy)
-
-#### API
-
-Enable tracking latest requests from the screen clients in the API by setting the following values in `.env.local`:
-
-```dotenv
-TRACK_SCREEN_INFO=true
-# Data will only be updated with this interval:
-TRACK_SCREEN_INFO_UPDATE_INTERVAL_SECONDS=300
-```
-
-In the infrastructure files these variables can be set by the environment variables:
-
-```dotenv
-APP_TRACK_SCREEN_INFO=true
-APP_TRACK_SCREEN_INFO_UPDATE_INTERVAL_SECONDS=300
-```
-
-#### Admin
-
-Set the following value in public/config.json to enable showing screen status information in the Admin.
-
-```json
-{
-  "showScreenStatus": true
-}
-```
-
-In the infrastructure files this variable can be set by the environment variable:
-
-```dotenv
-APP_SHOW_SCREEN_STATUS=true
-```
 
 ##  List view
 
@@ -102,3 +65,38 @@ Furthermore, the section "Tilkobling" will show the following data:
 
 This shows when the latest communication has occured, what client version the machine is running,
 and the time of client code release.
+
+## 2.x (legacy)
+
+### API
+
+Enable tracking latest requests from the screen clients in the API by setting the following values in `.env.local`:
+
+```dotenv
+TRACK_SCREEN_INFO=true
+# Data will only be updated with this interval:
+TRACK_SCREEN_INFO_UPDATE_INTERVAL_SECONDS=300
+```
+
+In the infrastructure files these variables can be set by the environment variables:
+
+```dotenv
+APP_TRACK_SCREEN_INFO=true
+APP_TRACK_SCREEN_INFO_UPDATE_INTERVAL_SECONDS=300
+```
+
+### Admin
+
+Set the following value in public/config.json to enable showing screen status information in the Admin.
+
+```json
+{
+  "showScreenStatus": true
+}
+```
+
+In the infrastructure files this variable can be set by the environment variable:
+
+```dotenv
+APP_SHOW_SCREEN_STATUS=true
+```
