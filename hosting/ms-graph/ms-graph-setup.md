@@ -403,3 +403,54 @@ Eksempel på ressource og lokation (opdigtede data)
 |---|---|---|
 | Ressource | Mødelokale 1 | `moedelokale1@kommune.dk`, visningsnavn “Mødelokale 1” |
 | Lokation | Rådhuset | Adresse, by, postnummer og eventuelt koordinater |
+
+
+
+
+## Skriveadgang
+
+
+```markdown
+Der bør skelnes mellem **læseadgang til kalenderdata** og **adgang til at oprette bookinger**. Med den nuværende MS Graph-feedløsning bruges app-only adgang til at hente rum og kalenderhændelser. Straksbooking kræver desuden skriverettigheder.
+
+## Graph-rettigheder
+
+Til feedet er de relevante application permissions typisk:
+
+- **`Place.Read.All`** til at hente rum og lokalelister fra Microsoft Graph.
+- **`Calendars.Read`** til at læse kalenderhændelser.
+
+Hvis appen skal oprette hændelser direkte i et rums kalender, skal den have **`Calendars.ReadWrite`**. Det er en kraftig tilladelse: uden afgrænsning kan den give adgang til kalendere i hele organisationen. Application permissions kræver administratorens samtykke.
+
+Microsofts dokumentation beskriver `Calendars.ReadWrite` som tilladelsen til at læse, oprette, ændre og slette kalenderhændelser: [Graph permissions reference](https://learn.microsoft.com/graph/permissions-reference).
+
+## Begræns adgang til bestemte postkasser
+
+Den anbefalede moderne metode er **Exchange Online RBAC for Applications**:
+
+1. Exchange-administratoren registrerer appens Enterprise Application-serviceprincipal i Exchange.
+2. Administratoren opretter et **management scope**, der kun omfatter de ønskede rumspostkasser. Det kan eksempelvis baseres på en Exchange-attribut, som administratoren sætter på de rum, der må bookes.
+3. Administratoren tildeler appen Exchange-rollen **`Application Calendars.ReadWrite`** inden for dette scope.
+4. Adgangen afprøves med `Test-ServicePrincipalAuthorization` for både en tilladt og en ikke-tilladt postkasse.
+
+Microsofts vejledning er [RBAC for Applications in Exchange Online](https://learn.microsoft.com/exchange/permissions-exo/application-rbac).
+
+### Vigtigt om rettigheder i Entra ID
+
+RBAC-afgrænsningen begrænser ikke automatisk en tilsvarende, allerede givet **uafgrænset** Graph application permission i Entra ID. Tilladelser fra Entra ID og Exchange RBAC kan lægges sammen. Hvis `Calendars.ReadWrite` stadig er givet direkte og uafgrænset i Entra ID, kan det derfor ophæve den tilsigtede begrænsning.
+
+Administratorerne bør planlægge tilladelserne, så kalenderadgangen reelt gives med den ønskede afgrænsning, og teste resultatet. Microsoft forklarer dette samspil i RBAC-dokumentationen.
+
+Der findes også den ældre **Application Access Policy**-metode, typisk baseret på en mail-enabled security group. Microsoft beskriver den stadig, men anbefaler RBAC for Applications som den nyere model. Undgå at sætte begge modeller op uden en klar plan, da deres tilladelser kan interagere på uventede måder.
+
+## Hvis booking sendes som en mødeinvitation
+
+Hvis man i stedet opretter mødet i en dedikeret arrangørpostkasse og inviterer lokalet som en *resource*-deltager, skal appen have kalenderadgang til **arrangørpostkassen**. Selve lokalet behandler derefter invitationen efter sine Exchange-bookingregler. I den model skal scope altså omfatte arrangørpostkassen; det er ikke nødvendigvis nødvendigt at give appen skriverettigheder til rummenes kalendere.
+
+Den præcise opsætning afhænger derfor af bookingmodellen:
+
+- **Opret direkte i rummets kalender:** afgræns `Calendars.ReadWrite` til de bookbare rum.
+- **Opret fra en arrangør og inviter rummet:** giv kalenderadgang til arrangørpostkassen, og lad Exchange håndtere rummets accept/afslag.
+
+`Place.Read.All` til rum- og lokalelisteopslag er separat fra kalenderrettighederne. Exchange-mailboksafgrænsning er ikke i sig selv en afgrænsning af alle Graph-API’er, så administratoren bør også vurdere, om appen må kunne læse metadata om alle rum.
+```
