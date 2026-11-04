@@ -5,7 +5,6 @@ parent: For driftsleverandører
 nav_order: 2
 has_children: false
 ---
-
 # Installér OS2display på jeres egen server
 
 Med den officielle installationspakke [os2display-docker-server](https://github.com/os2display/os2display-docker-server) får I en produktionsklar OS2display-installation op at køre på en enkelt Linux-server. Alt hvad I skal bruge, er:
