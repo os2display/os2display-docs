@@ -1,8 +1,9 @@
 ---
 title: SSO Setup
 layout: default
-parent: For driftsleverandører
-nav_order: 4
+parent: Logins, brugere og områder
+grand_parent: For driftsleverandører
+nav_order: 1
 has_children: false
 ---
 
