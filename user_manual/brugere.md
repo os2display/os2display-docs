@@ -28,12 +28,11 @@ Det kan f. eks. være frivillige i et medborgerhus.
 Eksterne brugere logger ind i OS2display med deres MitID. Første gang de logger ind, skal de angive en aktiveringskode, som de har fået tilsendt.
 
 ### Opret aktiveringskode til ny ekstern bruger
-1. Under **Aktiveringskoder** tryk på **Ny**. 
-2. Du kan nu vælge mellem **ekstern bruger** og **ekstern brugeradministrator**. 
-  Begge får redaktør-adgang til området, men brugeradministratoren har mulighed for at tilføje nye aktiveringskoder og dermed give adgang til andre eksterne brugere. 
-3. En aktiveringskode genereres. Den giver adgang til et område i OS2display. Aktiveringskoden er **aktiv i to døgn** fra udstedelse og skal manuelt videredistribueres til den person, som skal have ekstern adgang.
-4. Når den eksterne bruger har modtaget sin aktiveringskode skal personen logge ind i OS2display via MitID og så indtaste den unikke kode. Det skal ske inden for to døgn fra oprettelsen af aktiveringskoden.
 
-
+1. Under **Aktiveringskoder** tryk på **Ny**.
+2. Vælg mellem **ekstern bruger** og **ekstern brugeradministrator**. Begge får redaktør-adgang til området, men brugeradministratoren kan desuden tilføje nye aktiveringskoder og dermed give adgang til andre eksterne brugere.
+3. En aktiveringskode genereres. Den giver adgang til ét område i OS2display. Koden er **aktiv i to døgn** fra udstedelse og skal manuelt videredistribueres til den person, som skal have ekstern adgang.
+4. Den eksterne bruger logger ind i OS2display via MitID og indtaster den unikke kode — inden for to døgn fra oprettelsen af aktiveringskoden.
 
 ![Ekstern bruger logger ind første gang](../assets/ekstern-bruger-aktiveringskode.png)
+
