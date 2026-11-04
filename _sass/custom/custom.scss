@@ -15,9 +15,13 @@ a.nav-list-link {
   padding-bottom: $sp-2;
 }
 
-// Style collection headers (e.g. "Nyheder") like the "Home" menu item.
+// Style collection headers (e.g. "Nyheder") like the "Home" menu item,
+// and keep the front page link ("Forside") styled the same way on all
+// pages, so the two match whether or not the front page is active.
+.nav-list .nav-list-item .nav-list-link[href="/"],
 .nav-category {
   color: $link-color;
+  font-weight: 600;
   text-transform: none;
   border-bottom: none;
   background-image: linear-gradient(
