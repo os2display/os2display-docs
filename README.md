@@ -1,6 +1,6 @@
-# OS2Display documentation readme
+# OS2display documentation readme
 
-This repository contains documentation for OS2Display. The documentation is build and published 
+This repository contains documentation for OS2display. The documentation is build and published 
 using Github actions and the [Just the docs](https://just-the-docs.com/) theme.
 
 To update the documentation please make a pull request to this repository. 

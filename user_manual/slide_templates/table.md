@@ -18,4 +18,4 @@ Det skal undersøges om denne funktion virker
 |Fakta om skabelonen           | |
 |-----------------------------|-----------|
 |Systemnavn:                    |table  |
-|Kræver OS2Display datakilde:   |Nej          |
+|Kræver OS2display datakilde:   |Nej          |

@@ -54,6 +54,6 @@ Hvis du sætter flueben i denne checkboks bliver billedet fra feedet vist uden b
 |Fakta om skabelonen           | |
 |-----------------------------|-----------|
 |Systemnavn:                            |instagram-feed  |
-|Kræver OS2Display datakilde:           |Ja              |
+|Kræver OS2display datakilde:           |Ja              |
 |Kompatible feed output models:         |Instagram       |
 |Kompatible Datakilde Typer:            |Notified        |

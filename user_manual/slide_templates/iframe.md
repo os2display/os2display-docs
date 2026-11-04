@@ -17,4 +17,4 @@ Der er ingen automatisk refresh på iframen, så hvis den ikke ligger i et rul m
 |Fakta om skabelonen           | |
 |-----------------------------|-----------|
 |Systemnavn:                    |iframe       |
-|Kræver OS2Display datakilde:   |Nej          |
+|Kræver OS2display datakilde:   |Nej          |

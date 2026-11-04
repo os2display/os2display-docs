@@ -1,7 +1,7 @@
 ---
 title: Hovedmenuen
 layout: default
-parent: Sådan bruger du OS2Display
+parent: Sådan bruger du OS2display
 nav_order: 5
 has_children: false
 ---
@@ -13,7 +13,7 @@ Hovedmenuen består af:
 
 ## Område 
 
-OS2Display er bygget op i adskilte områder (også kaldet tenants). Et område svarer ofte til en organisatorisk enhed, som f. eks. bibliotekerne, rådhuset, folkeskolerne eller lign. I bestemmer selv hvilke og hvor mange områder, I har brug for. Hvis man har adgang til flere områder, kan man skifte mellem dem via en rullemenu. Områderne er silo-opdelte, så som udgangspunkt deler de ikke indhold. Men det er muligt via redskabet Delte spillelister (link) at dele også på tværs af områder. 
+OS2display er bygget op i adskilte områder (også kaldet tenants). Et område svarer ofte til en organisatorisk enhed, som f. eks. bibliotekerne, rådhuset, folkeskolerne eller lign. I bestemmer selv hvilke og hvor mange områder, I har brug for. Hvis man har adgang til flere områder, kan man skifte mellem dem via en rullemenu. Områderne er silo-opdelte, så som udgangspunkt deler de ikke indhold. Men det er muligt via redskabet Delte spillelister (link) at dele også på tværs af områder. 
 
 ## Slides 
 
@@ -25,7 +25,7 @@ Slides placeres i spillelister. En spilleliste er altså en samling af slides, s
 
 ## Skærme 
 
-For hver fysiske skærm skal der oprettes en virtuel skærm i OS2Display. I skærm-menuen angiver man, hvilket layout skærmen bruger (er det en fuldskærm eller er den opdelt i flere regioner?), og hvilke spillelister der afspilles i hver region på skærmen. Hvis der er defineret flere spillelister til samme region, vil de blive afspillet i forlængelse af hinanden. Menupunktet er kun synligt for administratorer.
+For hver fysiske skærm skal der oprettes en virtuel skærm i OS2display. I skærm-menuen angiver man, hvilket layout skærmen bruger (er det en fuldskærm eller er den opdelt i flere regioner?), og hvilke spillelister der afspilles i hver region på skærmen. Hvis der er defineret flere spillelister til samme region, vil de blive afspillet i forlængelse af hinanden. Menupunktet er kun synligt for administratorer.
 
 ## Brugere 
 

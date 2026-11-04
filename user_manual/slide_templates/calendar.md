@@ -16,7 +16,7 @@ Når datakilden er konfigureret, kan man vælge de resurser (lokaler), som er gj
 
 #### Omskriv titler med (optaget), Vis kun begivenheder med (liste) i titlen. 
 
-Det er muligt at afgrænse det antal bookinger, der vises, ved at få OS2Display til at sætte særlige regler op for emnefeltet. Dette skal konfigureres i datakilden. 
+Det er muligt at afgrænse det antal bookinger, der vises, ved at få OS2display til at sætte særlige regler op for emnefeltet. Dette skal konfigureres i datakilden. 
 
 #### Layout 
 
@@ -45,6 +45,6 @@ I de følgende formularfelter gives diverse muligheder for at ændre i opsætnin
 
 |Fakta om skabelonen           | |
 |-----------------------------|-----------|
-|Kræver OS2Display datakilde: | Ja |
+|Kræver OS2display datakilde: | Ja |
 |Kompatible feed output models: |Calendar |
 |Kompatible Datakilde Typer: |CalendarAPI, Koba |

@@ -41,7 +41,7 @@ Upload et billede. Placeres som et logo i øverste venstre hjørne. Ikke påkræ
 
 |Fakta om skabelonen           | |
 |-----------------------------|-----------|
-|Kræver OS2Display datakilde: | Ja |
+|Kræver OS2display datakilde: | Ja |
 |Kompatible feed output models: |brnd-booking |
 |Kompatible Datakilde Typer: |BRND|
 

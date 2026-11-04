@@ -10,6 +10,6 @@ Skabelonen henter indhold fra en RSS-kilde. Der title og description, men ikke b
 |Fakta om skabelonen           | |
 |-----------------------------|-----------|
 |Systemnavn:                    |rss  |
-|Kræver OS2Display datakilde: |Ja  | 
+|Kræver OS2display datakilde: |Ja  | 
 |Kompatible feed output models: |RSS  | 
 |Kompatible Datakilde Typer: |Colibi, RSS  | 

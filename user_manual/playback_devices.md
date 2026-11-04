@@ -1,12 +1,12 @@
 ---
 title: Afspilningsenheder
 layout: default
-parent: Sådan bruger du OS2Display
+parent: Sådan bruger du OS2display
 nav_order: 50
 has_children: false
 ---
 
-OS2Display kan bruges med mange forskellige afspilningsenheder.
+OS2display kan bruges med mange forskellige afspilningsenheder.
 
 ## Krav til afspilningsenheden
 - Ved opstart skal den automatisk kunne åbne en webbrowser i fuld skærm og vise en bestemt URL (det der ofte kaldes kiosk-mode)
@@ -21,7 +21,7 @@ Har man mange storskærme på flere lokationer opstår hurtigt et behov for at k
 - Opdatere operativsystem og software på afspilningsenheden
 - Genstarte afspilningsenheden
 
-Disse funktioner ligger IKKE i OS2Display. OS2Display bruges kun til at lægge indhold i spillelister som knyttes til skærme. "Device management" er ikke i scope for OS2Display.
+Disse funktioner ligger IKKE i OS2display. OS2display bruges kun til at lægge indhold i spillelister som knyttes til skærme. "Device management" er ikke i scope for OS2display.
 
 
 Har man brug for styring af sine afspilningsenheder skal det ske via et andet system. 

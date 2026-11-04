@@ -1,7 +1,7 @@
 ---
 title: Kampagner
 layout: default
-parent: Sådan bruger du OS2Display
+parent: Sådan bruger du OS2display
 nav_order: 7
 has_children: false
 ---

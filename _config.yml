@@ -19,11 +19,11 @@ defaults:
       nav_exclude: false
 
 aux_links:
-  "OS2Display på os2.eu":
+  "OS2display på os2.eu":
     - "//www.os2.eu/os2display"
 
 nav_external_links:
-  - title: OS2Display på GitHub
+  - title: OS2display på GitHub
     url: //github.com/os2display/os2display
     hide_icon: false # set to true to hide the external link icon - defaults to false
     opens_in_new_tab: true # set to true to open this link in a new tab - defaults to false

@@ -13,4 +13,4 @@ Viser den uploadede video fra start til slut, som standard uden lyd. Autoplay kr
 |Fakta om skabelonen           | |
 |-----------------------------|-----------|
 |Systemnavn:                    |video  |
-|Kræver OS2Display datakilde:   |Nej          |
+|Kræver OS2display datakilde:   |Nej          |

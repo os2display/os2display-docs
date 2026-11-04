@@ -1,7 +1,7 @@
 ---
 title: Slides
 layout: default
-parent: Sådan bruger du OS2Display
+parent: Sådan bruger du OS2display
 nav_order: 5
 has_children: false
 ---

@@ -20,7 +20,7 @@ Tekststørrelsen angives som xs, s, m, l eller xl. Størrelsen er relativ i kode
 
 #### Billeder 
 
-Du kan uploade gængse billede-formater (png, jpg, gif, webp mv.), men ikke pdf og Office-filer. Pdf’er skal altså omdannes til png, før man kan lægge filen ind i OS2Display. Brug grafiske programmer eller klippeværktøj. 
+Du kan uploade gængse billede-formater (png, jpg, gif, webp mv.), men ikke pdf og Office-filer. Pdf’er skal altså omdannes til png, før man kan lægge filen ind i OS2display. Brug grafiske programmer eller klippeværktøj. 
 
 Efter upload af billeder lægger de sig i områdets mediearkiv. Vær opmærksom på, at det ikke er muligt at tilføje metadata til billeder efter, det er gemt. Man kan også vælge billeder fra mediearkivet via den grønne knap. Har du fx grafiske elementer, som skal bruges på flere slides, er det en god idé at huske at tilføje metadata, så billedet kan fremsøges. 
 
@@ -49,4 +49,4 @@ Indstillingerne vedrørende logo er kun relevante, hvis der er uploadet et logo 
 |Fakta om skabelonen           | |
 |-----------------------------|-----------|
 |Systemnavn:                    |image-text   |
-|Kræver OS2Display datakilde:   |Nej          |
+|Kræver OS2display datakilde:   |Nej          |

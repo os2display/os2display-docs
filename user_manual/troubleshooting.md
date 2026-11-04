@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting
 layout: default
-parent: Sådan bruger du OS2Display
+parent: Sådan bruger du OS2display
 nav_order: 13
 has_children: false
 ---
@@ -16,9 +16,9 @@ I Aarhus anvendes et fix, hvor alle maskiner starter op med en online check-side
 [History for public/client/online-check/index.html - os2display/os2display · GitHub](https://github.com/os2display/os2display/commits/main/public/client/online-check/index.html)
  
  
-### Sådan finder du versionsnummer på OS2Display  
+### Sådan finder du versionsnummer på OS2display  
  
-Du kan undersøge hvilken version af OS2Display som er installeret, ved at kigge i filen release.json som er tilgængelig via browseren. 
+Du kan undersøge hvilken version af OS2display som er installeret, ved at kigge i filen release.json som er tilgængelig via browseren. 
  
 Adressen er URL til admin-grænsefladen efterfulgt af /release.json 
  

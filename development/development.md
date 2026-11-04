@@ -18,7 +18,7 @@ bin/console app:template:load https://raw.githubusercontent.com/os2display/displ
 
 --------------------------------------------------------------------------------
 
-OS2Display consists of 4 parts:
+OS2display consists of 4 parts:
 
 1. API: <https://github.com/os2display/display-api-service>
 2. Admin: <https://github.com/os2display/display-admin-client>

@@ -25,4 +25,4 @@ Hvis man ikke udfylder de indledende fritekst-felter forsvinder feltet til venst
 |Fakta om skabelonen           | |
 |-----------------------------|-----------|
 |Systemnavn:                    |travel  |
-|Kræver OS2Display datakilde:   |Nej          |
+|Kræver OS2display datakilde:   |Nej          |

@@ -11,4 +11,4 @@ Slideshow kan bruges til at vise et antal billeder med animeret effekt og overga
 |Fakta om skabelonen           | |
 |-----------------------------|-----------|
 |Systemnavn:                    |slideshow  |
-|Kræver OS2Display datakilde:   |Nej          |
+|Kræver OS2display datakilde:   |Nej          |

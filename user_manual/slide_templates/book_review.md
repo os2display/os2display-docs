@@ -46,4 +46,4 @@ Nederst i skabelonen, under Opsætning, angiver du slidets varighed i sekunder.
 |Fakta om skabelonen           | |
 |-----------------------------|-----------|
 |Systemnavn:                    |book-review  |
-|Kræver OS2Display datakilde:   |Nej          |
+|Kræver OS2display datakilde:   |Nej          |

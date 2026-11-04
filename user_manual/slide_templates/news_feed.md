@@ -14,7 +14,7 @@ Colibo-datakilden giver mulighed for at vise et antal nyheder fra udvalgte organ
 |Fakta om skabelonen           | |
 |-----------------------------|-----------|
 |Systemnavn:                    |news-feed  |
-|Kræver OS2Display datakilde: |Ja  |
+|Kræver OS2display datakilde: |Ja  |
 |Kompatible feed output models: |RSS  |
 |Kompatible Datakilde Typer: |Colibo, RSS  |
 

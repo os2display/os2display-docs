@@ -1,7 +1,7 @@
 ---
 title: Spillelister
 layout: default
-parent: Sådan bruger du OS2Display
+parent: Sådan bruger du OS2display
 nav_order: 6
 has_children: false
 ---
