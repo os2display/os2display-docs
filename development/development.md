@@ -1,7 +1,7 @@
 ---
 title: Development Setup
 layout: default
-parent: Udvikling
+parent: For udviklere
 nav_order: 1
 has_children: false
 ---
