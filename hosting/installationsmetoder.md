@@ -8,16 +8,16 @@ has_children: false
 
 # Installationsmetoder og krav
 
-Fra version 3.0 er OS2display én samlet Symfony-applikation, [os2display/os2display](https://github.com/os2display/os2display), der serverer API'et, administrationen på `/admin` og skærmklienten på `/client`. Der er ingen separate admin- eller klientapplikationer at hoste.
+Fra version 3.0 er OS2display én samlet Symfony-applikation, [os2display/os2display](https://github.com/os2display/os2display), der indeholder API'et, administrations-GUI på `/admin` og skærmklienten på `/client`. Ingen admin- eller klientapplikationer skal hostes seperat.
 
 
 ## Fire måder at installere på
 
 ### 1. os2display-docker-server (anbefalet)
 
-[os2display-docker-server](https://github.com/os2display/os2display-docker-server) er et færdigt docker compose-setup med de publicerede images, en valgfri medfølgende MariaDB og Traefik samt tasks til at installere, opdatere og drive stakken. Denne metode er beskrevet trin for trin på [installationssiden](./).
+[os2display-docker-server](https://github.com/os2display/os2display-docker-server) er et færdigt docker compose-setup med de publicerede images, en valgfri medfølgende MariaDB og Traefik samt tasks til at installere, opdatere og drifte det samlede setup. Denne metode er beskrevet trin for trin på [installationssiden](./).
 
-### 2. Publicerede images
+### 2. Publicerede images i eget container-setup
 
 Kør de to images i jeres eget container-setup:
 
