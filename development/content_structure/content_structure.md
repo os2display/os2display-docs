@@ -1,7 +1,7 @@
 ---
 title: Content Structure
 layout: default
-parent: Udvikling
+parent: For udviklere
 nav_order: 2
 has_children: true
 ---
