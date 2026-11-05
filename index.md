@@ -1,5 +1,5 @@
 ---
-title: Forside
+title: OS2display dokumentation
 layout: frontpage
 nav_order: 1
 ---
