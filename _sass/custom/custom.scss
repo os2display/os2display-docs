@@ -29,6 +29,17 @@ a.nav-list-link {
   padding-bottom: $sp-2;
 }
 
+// Hover in the left menu: just bold — no blue color, no gradient.
+.nav-list .nav-list-item .nav-list-link:not(.nav-home-link):hover {
+  font-weight: 600;
+  color: $os2-text-black-000;
+  background-image: none;
+}
+
+.nav-list .nav-list-item .nav-list-link.nav-home-link:hover {
+  background-image: none;
+}
+
 // Style the collection headers (e.g. "Nyheder") and the front page link
 // ("Forside") as quiet uppercase section headers, so the green highlight
 // of the active menu item is the only filled element in the menu.
