@@ -57,6 +57,12 @@ a.nav-list-link {
   background-image: none;
 }
 
+// When a child page is active, show its ancestor menu items in bold.
+// (The theme's JS adds .active to every enclosing .nav-list-item.)
+.nav-list .nav-list-item.active > .nav-list-link {
+  font-weight: 600;
+}
+
 // Distinct styling for the active (current page) menu item: a solid
 // OS2-green accent bar and tint, clearly different from the section
 // headers. The front page link is excluded, so it stays a quiet header
