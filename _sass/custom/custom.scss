@@ -2,6 +2,35 @@
   border-bottom: 0;
 }
 
+// Clearer typographic hierarchy in page content (news and docs): the
+// theme ships all headings at font-weight 500 with no space above, which
+// makes articles read as one solid block. Bolder headings, more air
+// above each section, and tighter coupling to the section's own text.
+.main-content {
+  h1 {
+    font-weight: 700;
+  }
+
+  h2 {
+    margin-top: 2em;
+    margin-bottom: 0.6em;
+    font-weight: 700;
+  }
+
+  h3 {
+    margin-top: 1.75em;
+    margin-bottom: 0.6em;
+    font-weight: 600;
+  }
+
+  h4,
+  h5,
+  h6 {
+    margin-top: 1.5em;
+    font-weight: 600;
+  }
+}
+
 a.nav-list-link {
   color: $os2-text-black-000;
 }

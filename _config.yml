@@ -17,6 +17,11 @@ defaults:
     values:
       layout: "default"
       nav_exclude: false
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "news"
 
 aux_links:
   "OS2display på os2.eu":
