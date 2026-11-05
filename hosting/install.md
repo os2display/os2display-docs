@@ -3,11 +3,13 @@ title: Installation
 layout: default
 parent: For driftsleverandører
 nav_order: 2
-has_children: false
+has_children: true
 ---
 # Installér OS2display på jeres egen server
 
-Med den officielle installationspakke [os2display-docker-server](https://github.com/os2display/os2display-docker-server) får I en produktionsklar OS2display-installation op at køre på en enkelt Linux-server. Alt hvad I skal bruge, er:
+Fra version 3.0 er OS2display én samlet [Symfony](https://symfony.com/)-applikation, [os2display/os2display](https://github.com/os2display/os2display), der serverer API'et, administrationen på `/admin` og skærmklienten på `/client` — der er ingen separate admin- eller klientapplikationer at hoste. Den kan installeres på [fire måder](installationsmetoder.html); den anbefalede er den officielle installationspakke, som er beskrevet på denne side.
+
+Med installationspakken [os2display-docker-server](https://github.com/os2display/os2display-docker-server) får I en produktionsklar OS2display-installation op at køre på en enkelt Linux-server. Alt hvad I skal bruge, er:
 
 - [Docker](https://docs.docker.com/engine/install/) med [Compose v2](https://docs.docker.com/compose/)
 - [Task](https://taskfile.dev/)
