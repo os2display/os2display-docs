@@ -458,6 +458,10 @@ Den præcise opsætning afhænger derfor af bookingmodellen:
 
 On the deployment serving display-dev.sonderborg.dk, run:
 
+```
+task compose -- exec phpfpm bin/console app:tenant:configure
+```
+
 Answer:
 
 Tenant: select the screen’s active tenant.
