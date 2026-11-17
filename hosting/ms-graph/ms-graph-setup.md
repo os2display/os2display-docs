@@ -454,3 +454,39 @@ Den præcise opsætning afhænger derfor af bookingmodellen:
 
 `Place.Read.All` til rum- og lokalelisteopslag er separat fra kalenderrettighederne. Exchange-mailboksafgrænsning er ikke i sig selv en afgrænsning af alle Graph-API’er, så administratoren bør også vurdere, om appen må kunne læse metadata om alle rum.
 ```
+## Configure interactive slides for tenant
+
+On the deployment serving display-dev.sonderborg.dk, run:
+
+Answer:
+
+Tenant: select the screen’s active tenant.
+Configure fallback image URL: n
+Configure interactive slides: y
+Configure App\InteractiveSlide\InstantBook: y
+Enable MS Graph feed-source booking without configuring legacy credentials: y
+This enables the feature without adding credentials or overwriting existing Calendar API booking configuration. Microsoft credentials remain on the feed source.
+
+## Permissions krav
+
+So the underlying issue is Graph denying access, which our backend unfortunately presents as a generic 502.
+
+Ask your Microsoft administrator to verify:
+
+The same app configured on the feed source has Calendars.ReadWrite application access.
+Admin consent has been granted if permissions are assigned through Entra.
+Any Exchange mailbox scope includes the room.
+If using Exchange Application RBAC, its scoped role is Application Calendars.ReadWrite, not just read access.
+If permissions were recently changed, the cached access token may still contain the old permissions. Refresh it with:
+
+Does the app have application Calendars.ReadWrite access, rather than delegated access or read-only access?
+Does its Exchange scope include the room mailbox?
+For Exchange Application RBAC, your Microsoft administrator can test:
+
+```
+Test-ServicePrincipalAuthorization `
+  -Identity "<application-client-id>" `
+  -Resource "ress1842@sonderborg.dk"
+```
+
+The result should show Application Calendars.ReadWrite with InScope = True. This command checks RBAC assignments, not separate Entra permission grants.
